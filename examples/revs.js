@@ -57,3 +57,13 @@ var cross_table = new Table({ head: ["", "Header #1", "Header #2"] });
 cross_table.push({ "Header #3": ["Value 1", "Value 2"] },
                  { "Header #4": ["Value 3", "Value 4"] });
 console.log(cross_table.toString());
+
+/* unicode */
+var unicode_table = new Table({
+    head: ['Chinese', 'Korean', 'Japanes', 'Hebrew', 'Russian']
+});
+
+unicode_table.push(
+    ['你好，世界', '안녕하세요, 세계', 'ハロー・ワールド', 'שלום, עולם', 'Привет, мир']
+);
+console.log(unicode_table.toString())
